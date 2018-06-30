@@ -36,7 +36,7 @@
         <ui:repeat value="#{controller.movies}" var="movie">
 
 
-            <div class="info-box" onclick="window.location='movie?movie_id=#{movie.movie_id}'">
+            <div class="info-box" onclick="window.location='movieservlet?movie_id=#{movie.movie_id}'">
                 <h:graphicImage url="img/posters/#{movie.cover_image}"/>
                 <div class="hidden-info-box">
                     <h1>#{movie.title}</h1>
