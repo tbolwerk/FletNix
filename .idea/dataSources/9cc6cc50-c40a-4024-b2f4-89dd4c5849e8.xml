@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="FletNix@localhost">
+  <database-model serializer="dbm" rdbms="MSSQL" format-version="4.9">
+    <root id="1">
+      <ServerVersion>14.0.100</ServerVersion>
+      <ServerType>standalone</ServerType>
+    </root>
+    <database id="2" parent="1" name="FletNix">
+      <ObjectId>5</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="3" parent="1" name="master">
+      <ObjectId>1</ObjectId>
+    </database>
+    <database id="4" parent="1" name="tempdb">
+      <ObjectId>2</ObjectId>
+    </database>
+    <database id="5" parent="1" name="model">
+      <ObjectId>3</ObjectId>
+    </database>
+    <database id="6" parent="1" name="msdb">
+      <ObjectId>4</ObjectId>
+    </database>
+    <schema id="7" parent="2" name="dbo">
+      <ObjectId>1</ObjectId>
+      <IntrospectionTimestamp>2018-06-28.17:18:08.810</IntrospectionTimestamp>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="8" parent="2" name="guest">
+      <ObjectId>2</ObjectId>
+    </schema>
+    <schema id="9" parent="2" name="INFORMATION_SCHEMA">
+      <ObjectId>3</ObjectId>
+    </schema>
+    <schema id="10" parent="2" name="sys">
+      <ObjectId>4</ObjectId>
+    </schema>
+    <schema id="11" parent="2" name="db_owner">
+      <ObjectId>16384</ObjectId>
+    </schema>
+    <schema id="12" parent="2" name="db_accessadmin">
+      <ObjectId>16385</ObjectId>
+    </schema>
+    <schema id="13" parent="2" name="db_securityadmin">
+      <ObjectId>16386</ObjectId>
+    </schema>
+    <schema id="14" parent="2" name="db_ddladmin">
+      <ObjectId>16387</ObjectId>
+    </schema>
+    <schema id="15" parent="2" name="db_backupoperator">
+      <ObjectId>16389</ObjectId>
+    </schema>
+    <schema id="16" parent="2" name="db_datareader">
+      <ObjectId>16390</ObjectId>
+    </schema>
+    <schema id="17" parent="2" name="db_datawriter">
+      <ObjectId>16391</ObjectId>
+    </schema>
+    <schema id="18" parent="2" name="db_denydatareader">
+      <ObjectId>16392</ObjectId>
+    </schema>
+    <schema id="19" parent="2" name="db_denydatawriter">
+      <ObjectId>16393</ObjectId>
+    </schema>
+    <table id="20" parent="7" name="Contract">
+      <ObjectId>1926297922</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.047</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.060</ModifiedTimestamp>
+    </table>
+    <table id="21" parent="7" name="Country">
+      <ObjectId>1862297694</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.037</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.063</ModifiedTimestamp>
+    </table>
+    <table id="22" parent="7" name="Customer">
+      <ObjectId>1958298036</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.050</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.103</ModifiedTimestamp>
+    </table>
+    <table id="23" parent="7" name="Genre">
+      <ObjectId>1766297352</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.020</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.033</ModifiedTimestamp>
+    </table>
+    <table id="24" parent="7" name="Movie">
+      <ObjectId>1590296725</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:21.993</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.107</ModifiedTimestamp>
+    </table>
+    <table id="25" parent="7" name="Movie_Cast">
+      <ObjectId>1702297124</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.010</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.010</ModifiedTimestamp>
+    </table>
+    <table id="26" parent="7" name="Movie_Director">
+      <ObjectId>1638296896</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22</ModifiedTimestamp>
+    </table>
+    <table id="27" parent="7" name="Movie_Genre">
+      <ObjectId>1798297466</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.023</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.023</ModifiedTimestamp>
+    </table>
+    <table id="28" parent="7" name="Payment">
+      <ObjectId>1894297808</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.040</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.060</ModifiedTimestamp>
+    </table>
+    <table id="29" parent="7" name="Person">
+      <ObjectId>1558296611</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:21.990</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.017</ModifiedTimestamp>
+    </table>
+    <table id="30" parent="7" name="WatchHistory">
+      <ObjectId>2038298321</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.063</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.110</ModifiedTimestamp>
+    </table>
+    <view id="31" parent="7" name="AantalFilmsPerGenre">
+      <ObjectId>1609772792</ObjectId>
+      <CreatedTimestamp>2018-01-16.14:57:14.213</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-16.14:57:14.213</ModifiedTimestamp>
+    </view>
+    <view id="32" parent="7" name="INVOICE">
+      <ObjectId>1865773704</ObjectId>
+      <CreatedTimestamp>2018-01-17.15:57:50.850</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-17.15:57:50.850</ModifiedTimestamp>
+    </view>
+    <view id="33" parent="7" name="MostWatchedMoviesIn2Months">
+      <ObjectId>1449772222</ObjectId>
+      <CreatedTimestamp>2018-01-14.18:53:01.500</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-14.18:53:01.500</ModifiedTimestamp>
+    </view>
+    <view id="34" parent="7" name="OpenstaandeKostenPerGebruiker">
+      <ObjectId>1433772165</ObjectId>
+      <CreatedTimestamp>2018-01-14.18:38:14.863</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-14.18:38:14.863</ModifiedTimestamp>
+    </view>
+    <view id="35" parent="7" name="PercentageFilmPerGenre">
+      <ObjectId>1817773533</ObjectId>
+      <CreatedTimestamp>2018-01-16.15:06:46.313</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-16.15:06:46.313</ModifiedTimestamp>
+    </view>
+    <view id="36" parent="7" name="TotaalAantalFilms">
+      <ObjectId>1641772906</ObjectId>
+      <CreatedTimestamp>2018-01-16.14:57:37.890</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-16.14:57:37.890</ModifiedTimestamp>
+    </view>
+    <view id="37" parent="7" name="WatchedMoviesInPast2Months">
+      <ObjectId>1833773590</ObjectId>
+      <CreatedTimestamp>2018-01-16.16:22:42.933</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-16.16:22:42.933</ModifiedTimestamp>
+    </view>
+    <routine id="38" parent="7" name="fnCHK_Watch_Date">
+      <ObjectId>1849773647</ObjectId>
+      <CreatedTimestamp>2018-01-17.15:50:48.927</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-17.15:50:48.927</ModifiedTimestamp>
+      <RoutineKind>function</RoutineKind>
+      <RoutineType>scalar-fun</RoutineType>
+    </routine>
+    <column id="39" parent="20" name="contract_type">
+      <Position>1</Position>
+      <DataType>varchar(10 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="40" parent="20" name="price_per_month">
+      <Position>2</Position>
+      <DataType>numeric(5,2)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="41" parent="20" name="discount_percentage">
+      <Position>3</Position>
+      <DataType>numeric(2)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="42" parent="20" name="PK_Contract">
+      <Position>1</Position>
+      <ColNames>contract_type</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="43" parent="20" name="PK_Contract">
+      <ObjectId>1942297979</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.050</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.050</ModifiedTimestamp>
+      <ColNames>contract_type</ColNames>
+      <UnderlyingIndexName>PK_Contract</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="44" parent="21" name="country_name">
+      <Position>1</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="45" parent="21" name="PK_Country">
+      <Position>1</Position>
+      <ColNames>country_name</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="46" parent="21" name="PK_Country">
+      <ObjectId>1878297751</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.040</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.040</ModifiedTimestamp>
+      <ColNames>country_name</ColNames>
+      <UnderlyingIndexName>PK_Country</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="47" parent="22" name="customer_mail_address">
+      <Position>1</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="22" name="last_name">
+      <Position>2</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="49" parent="22" name="first_name">
+      <Position>3</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="50" parent="22" name="payment_method">
+      <Position>4</Position>
+      <DataType>varchar(10 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="51" parent="22" name="payment_card_number">
+      <Position>5</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="52" parent="22" name="contract_type">
+      <Position>6</Position>
+      <DataType>varchar(10 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="53" parent="22" name="subscription_start">
+      <Position>7</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="54" parent="22" name="subscription_end">
+      <Position>8</Position>
+      <DataType>date|0s</DataType>
+    </column>
+    <column id="55" parent="22" name="user_name">
+      <Position>9</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="56" parent="22" name="password">
+      <Position>10</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="57" parent="22" name="country_name">
+      <Position>11</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="58" parent="22" name="gender">
+      <Position>12</Position>
+      <DataType>char(1 char)|0s</DataType>
+    </column>
+    <column id="59" parent="22" name="birth_date">
+      <Position>13</Position>
+      <DataType>date|0s</DataType>
+    </column>
+    <index id="60" parent="22" name="PK_Customer">
+      <Position>1</Position>
+      <ColNames>customer_mail_address</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="61" parent="22" name="CHK_Customer_Unique_Username">
+      <Position>2</Position>
+      <ColNames>user_name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="62" parent="22" name="CHK_Customer_Unique_Payment_Card_Number">
+      <Position>3</Position>
+      <ColNames>payment_card_number</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="63" parent="22" name="PK_Customer">
+      <ObjectId>1974298093</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.057</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.057</ModifiedTimestamp>
+      <ColNames>customer_mail_address</ColNames>
+      <UnderlyingIndexName>PK_Customer</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="64" parent="22" name="CHK_Customer_Unique_Payment_Card_Number">
+      <ObjectId>2815072</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.093</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.093</ModifiedTimestamp>
+      <ColNames>payment_card_number</ColNames>
+      <UnderlyingIndexName>CHK_Customer_Unique_Payment_Card_Number</UnderlyingIndexName>
+    </key>
+    <key id="65" parent="22" name="CHK_Customer_Unique_Username">
+      <ObjectId>2134298663</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.087</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.087</ModifiedTimestamp>
+      <ColNames>user_name</ColNames>
+      <UnderlyingIndexName>CHK_Customer_Unique_Username</UnderlyingIndexName>
+    </key>
+    <foreign-key id="66" parent="22" name="FK_Customer_REF_Payment_Method">
+      <ObjectId>1990298150</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.057</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.057</ModifiedTimestamp>
+      <ColNames>payment_method</ColNames>
+      <RefTableId>1894297808</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>Payment</RefTableName>
+      <RefKeyName>PK_Payment</RefKeyName>
+      <RefColNames>payment_method</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="67" parent="22" name="FK_Customer_REF_Contract_Type">
+      <ObjectId>2006298207</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.060</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.060</ModifiedTimestamp>
+      <ColNames>contract_type</ColNames>
+      <RefTableId>1926297922</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>Contract</RefTableName>
+      <RefKeyName>PK_Contract</RefKeyName>
+      <RefColNames>contract_type</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="68" parent="22" name="FK_Customer_REF_Country_Name">
+      <ObjectId>2022298264</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.060</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.060</ModifiedTimestamp>
+      <ColNames>country_name</ColNames>
+      <RefTableId>1862297694</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>Country</RefTableName>
+      <RefKeyName>PK_Country</RefKeyName>
+      <RefColNames>country_name</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <check id="69" parent="22" name="CHK_PAYMENT_CARD_NUMBER_LENGTH">
+      <ObjectId>18815129</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.097</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.097</ModifiedTimestamp>
+      <ColNames>payment_card_number</ColNames>
+      <Predicate>datalength([payment_card_number])&gt;8</Predicate>
+    </check>
+    <check id="70" parent="22" name="CHK_PASSWORD">
+      <ObjectId>34815186</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.103</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.103</ModifiedTimestamp>
+      <ColNames>password</ColNames>
+      <Predicate>datalength([password])&gt;4</Predicate>
+    </check>
+    <check id="71" parent="22" name="CHK_Customer_Gender">
+      <ObjectId>2102298549</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.077</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.077</ModifiedTimestamp>
+      <ColNames>gender</ColNames>
+      <Predicate>[gender]=&apos;V&apos; OR [gender]=&apos;M&apos;</Predicate>
+    </check>
+    <check id="72" parent="22" name="CHK_Customer_Subscription_Start">
+      <ObjectId>2118298606</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.080</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.080</ModifiedTimestamp>
+      <Predicate>[subscription_start]&lt;[subscription_end]</Predicate>
+    </check>
+    <column id="73" parent="23" name="genre_name">
+      <Position>1</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="74" parent="23" name="description">
+      <Position>2</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <index id="75" parent="23" name="Pk_Genre">
+      <Position>1</Position>
+      <ColNames>genre_name</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="76" parent="23" name="Pk_Genre">
+      <ObjectId>1782297409</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.023</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.023</ModifiedTimestamp>
+      <ColNames>genre_name</ColNames>
+      <UnderlyingIndexName>Pk_Genre</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="77" parent="24" name="movie_id">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="78" parent="24" name="title">
+      <Position>2</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="79" parent="24" name="duration">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="80" parent="24" name="description">
+      <Position>4</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <column id="81" parent="24" name="publication_year">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="82" parent="24" name="cover_image">
+      <Position>6</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <column id="83" parent="24" name="previous_part">
+      <Position>7</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="84" parent="24" name="price">
+      <Position>8</Position>
+      <DataType>numeric(5,2)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="85" parent="24" name="URL">
+      <Position>9</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </column>
+    <index id="86" parent="24" name="PK_Movie">
+      <Position>1</Position>
+      <ColNames>movie_id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="87" parent="24" name="PK_Movie">
+      <ObjectId>1606296782</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:21.997</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:21.997</ModifiedTimestamp>
+      <ColNames>movie_id</ColNames>
+      <UnderlyingIndexName>PK_Movie</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="88" parent="24" name="FK_Previous_Part_REF_Movie_Id">
+      <ObjectId>1622296839</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:21.997</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:21.997</ModifiedTimestamp>
+      <ColNames>previous_part</ColNames>
+      <RefTableId>1590296725</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>Movie</RefTableName>
+      <RefKeyName>PK_Movie</RefKeyName>
+      <RefColNames>movie_id</RefColNames>
+    </foreign-key>
+    <check id="89" parent="24" name="CHK_Publication_Year">
+      <ObjectId>50815243</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.107</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.107</ModifiedTimestamp>
+      <ColNames>publication_year</ColNames>
+      <Predicate>[publication_year]&gt;=1890 AND [publication_year]&lt;=datepart(year,getdate())</Predicate>
+    </check>
+    <column id="90" parent="25" name="movie_id">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="91" parent="25" name="person_id">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="92" parent="25" name="role">
+      <Position>3</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="93" parent="25" name="PK_Movie_Cast">
+      <Position>1</Position>
+      <ColNames>movie_id
+person_id
+role</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="94" parent="25" name="PK_Movie_Cast">
+      <ObjectId>1718297181</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.013</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.013</ModifiedTimestamp>
+      <ColNames>movie_id
+person_id
+role</ColNames>
+      <UnderlyingIndexName>PK_Movie_Cast</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="95" parent="25" name="FK_Movie_Cast_REF_Movie_Id">
+      <ObjectId>1734297238</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.013</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.013</ModifiedTimestamp>
+      <ColNames>movie_id</ColNames>
+      <RefTableId>1590296725</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>Movie</RefTableName>
+      <RefKeyName>PK_Movie</RefKeyName>
+      <RefColNames>movie_id</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="96" parent="25" name="FK_Movie_Cast_REF_Person_Id">
+      <ObjectId>1750297295</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.017</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.017</ModifiedTimestamp>
+      <ColNames>person_id</ColNames>
+      <RefTableId>1558296611</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>Person</RefTableName>
+      <RefKeyName>PK_Person</RefKeyName>
+      <RefColNames>person_id</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="97" parent="26" name="movie_id">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="98" parent="26" name="person_id">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="99" parent="26" name="PK_Movie_Director">
+      <Position>1</Position>
+      <ColNames>movie_id
+person_id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="100" parent="26" name="PK_Movie_Director">
+      <ObjectId>1654296953</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.003</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.003</ModifiedTimestamp>
+      <ColNames>movie_id
+person_id</ColNames>
+      <UnderlyingIndexName>PK_Movie_Director</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="101" parent="26" name="FK_Movie_Director_REF_Movie_Id">
+      <ObjectId>1670297010</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.003</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.003</ModifiedTimestamp>
+      <ColNames>movie_id</ColNames>
+      <RefTableId>1590296725</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>Movie</RefTableName>
+      <RefKeyName>PK_Movie</RefKeyName>
+      <RefColNames>movie_id</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="102" parent="26" name="FK_Movie_Director_REF_Person_Id">
+      <ObjectId>1686297067</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.007</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.007</ModifiedTimestamp>
+      <ColNames>person_id</ColNames>
+      <RefTableId>1558296611</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>Person</RefTableName>
+      <RefKeyName>PK_Person</RefKeyName>
+      <RefColNames>person_id</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="103" parent="27" name="movie_id">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="104" parent="27" name="genre_name">
+      <Position>2</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="105" parent="27" name="PK_Movie_Genre">
+      <Position>1</Position>
+      <ColNames>movie_id
+genre_name</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="106" parent="27" name="PK_Movie_Genre">
+      <ObjectId>1814297523</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.030</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.030</ModifiedTimestamp>
+      <ColNames>movie_id
+genre_name</ColNames>
+      <UnderlyingIndexName>PK_Movie_Genre</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="107" parent="27" name="FK_Movie_Genre_REF_Movie_ID">
+      <ObjectId>1830297580</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.030</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.030</ModifiedTimestamp>
+      <ColNames>movie_id</ColNames>
+      <RefTableId>1590296725</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>Movie</RefTableName>
+      <RefKeyName>PK_Movie</RefKeyName>
+      <RefColNames>movie_id</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="108" parent="27" name="FK_Movie_Genre_REF_Genre_Name">
+      <ObjectId>1846297637</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.033</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.033</ModifiedTimestamp>
+      <ColNames>genre_name</ColNames>
+      <RefTableId>1766297352</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>Genre</RefTableName>
+      <RefKeyName>Pk_Genre</RefKeyName>
+      <RefColNames>genre_name</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="109" parent="28" name="payment_method">
+      <Position>1</Position>
+      <DataType>varchar(10 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="110" parent="28" name="PK_Payment">
+      <Position>1</Position>
+      <ColNames>payment_method</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="111" parent="28" name="PK_Payment">
+      <ObjectId>1910297865</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.043</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.043</ModifiedTimestamp>
+      <ColNames>payment_method</ColNames>
+      <UnderlyingIndexName>PK_Payment</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="112" parent="29" name="person_id">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="113" parent="29" name="lastname">
+      <Position>2</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="114" parent="29" name="firstname">
+      <Position>3</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="115" parent="29" name="gender">
+      <Position>4</Position>
+      <DataType>char(1 char)|0s</DataType>
+    </column>
+    <index id="116" parent="29" name="PK_Person">
+      <Position>1</Position>
+      <ColNames>person_id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="117" parent="29" name="PK_Person">
+      <ObjectId>1574296668</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:21.990</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:21.990</ModifiedTimestamp>
+      <ColNames>person_id</ColNames>
+      <UnderlyingIndexName>PK_Person</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="118" parent="30" name="movie_id">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="119" parent="30" name="customer_mail_address">
+      <Position>2</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="120" parent="30" name="watch_date">
+      <Position>3</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="121" parent="30" name="price">
+      <Position>4</Position>
+      <DataType>numeric(5,2)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="122" parent="30" name="invoiced">
+      <Position>5</Position>
+      <DataType>bit|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="123" parent="30" name="PK_WatchHistory">
+      <Position>1</Position>
+      <ColNames>movie_id
+customer_mail_address
+watch_date</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="124" parent="30" name="PK_WatchHistory">
+      <ObjectId>2054298378</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.067</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.067</ModifiedTimestamp>
+      <ColNames>movie_id
+customer_mail_address
+watch_date</ColNames>
+      <UnderlyingIndexName>PK_WatchHistory</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="125" parent="30" name="FK_WatchHistory_REF_Movie_Id">
+      <ObjectId>2070298435</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.070</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.070</ModifiedTimestamp>
+      <ColNames>movie_id</ColNames>
+      <RefTableId>1590296725</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>Movie</RefTableName>
+      <RefKeyName>PK_Movie</RefKeyName>
+      <RefColNames>movie_id</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <foreign-key id="126" parent="30" name="FK_WatchHistory_REF_Customer_Mail_Address">
+      <ObjectId>2086298492</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.070</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.070</ModifiedTimestamp>
+      <ColNames>customer_mail_address</ColNames>
+      <RefTableId>1958298036</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>Customer</RefTableName>
+      <RefKeyName>PK_Customer</RefKeyName>
+      <RefColNames>customer_mail_address</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <check id="127" parent="30" name="CHK_WatchHistory_Watch_Date">
+      <ObjectId>66815300</ObjectId>
+      <CreatedTimestamp>2018-01-22.16:35:22.110</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-22.16:35:22.110</ModifiedTimestamp>
+      <Predicate>[dbo].[fnCHK_Watch_date]([customer_mail_address],[watch_date])=1</Predicate>
+    </check>
+    <column id="128" parent="31" name="genre_name">
+      <Position>1</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="129" parent="31" name="aantal_films">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="130" parent="32" name="lastname">
+      <Position>1</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="131" parent="32" name="firstname">
+      <Position>2</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="132" parent="32" name="total_price">
+      <Position>3</Position>
+      <DataType>numeric(38,2)|0s</DataType>
+    </column>
+    <column id="133" parent="33" name="movie_title">
+      <Position>1</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="134" parent="33" name="publication_year">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="135" parent="33" name="number_of_times_watched">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="136" parent="34" name="Lastname">
+      <Position>1</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="137" parent="34" name="Firstname">
+      <Position>2</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="138" parent="34" name="TotalPrice">
+      <Position>3</Position>
+      <DataType>numeric(38,2)|0s</DataType>
+    </column>
+    <column id="139" parent="35" name="genre">
+      <Position>1</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="140" parent="35" name="percentage">
+      <Position>2</Position>
+      <DataType>numeric(36,17)|0s</DataType>
+    </column>
+    <column id="141" parent="36" name="totaalFilms">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="142" parent="37" name="movie_title">
+      <Position>1</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="143" parent="37" name="publication_year">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="144" parent="37" name="number_of_times_watched">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <argument id="145" parent="38">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>bit|0s</DataType>
+    </argument>
+    <argument id="146" parent="38" name="@customer_mail_address">
+      <Position>1</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+    </argument>
+    <argument id="147" parent="38" name="@watch_date">
+      <Position>2</Position>
+      <DataType>date|0s</DataType>
+    </argument>
+  </database-model>
+</dataSource>
