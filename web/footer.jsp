@@ -15,15 +15,8 @@
 </body>
 
 </html>
-<script type="text/javascript">
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }
-
-
-</script>
+<script src="js/classie.js" type="text/javascript"></script>
+<script src="js/responsive.js" type="text/javascript"></script>
+<script src="js/search_overlay.js" type="text/javascript"></script>
+<script src="js/livesearch.js" type="text/javascript"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
