@@ -1,22 +1,21 @@
 function searchInfo() {
-    var key = document.getElementById('search').value;
-var request;
+    var key = document.getElementById('key').value;
+    var xhttp;
     if (window.XMLHttpRequest) {
-        request = new XMLHttpRequest();
+        // code for modern browsers
+        xhttp = new XMLHttpRequest();
     } else {
         // code for IE6, IE5
-        request = new ActiveXObject("Microsoft.XMLHTTP");
+        xhttp = new ActiveXObject("Microsoft.XMLHTTP");
     }
-
-    request.open('GET','livesearch?key='+key,true);
-    request.send(null);
-
-    var response = request.responseText;
-    if(response != null) {
-
-        document.getElementById("livesearch").innerHTML = "Response= " +response;
-    }else{
-        document.getElementById("livesearch").innerHTML = "No results";
-    }
-
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("livesearch").innerHTML = this.responseText;
+        }
+    };
+    xhttp.open('GET', 'livesearch?key=' + key, true);
+    xhttp.send();
 }
+
+
+

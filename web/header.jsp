@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
 <head>
     <title>FletNix</title>
@@ -35,8 +36,8 @@
     </div>
 </div>
 <div id="search_overlay" class="search_overlay">
-    <form class="search_overlay-form" action="">
-        <input class="search_overlay-input" id="search" type="search" placeholder="Search..." onkeyup="searchInfo()"/>
+    <form class="search_overlay-form">
+        <input class="search_overlay-input" type="search" id="key" placeholder="Search..." onkeyup="searchInfo()"/>
 
     </form>
     <div class="search_overlay-content">

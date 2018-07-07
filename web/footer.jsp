@@ -15,8 +15,9 @@
 </body>
 
 </html>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="js/classie.js" type="text/javascript"></script>
 <script src="js/responsive.js" type="text/javascript"></script>
 <script src="js/search_overlay.js" type="text/javascript"></script>
 <script src="js/livesearch.js" type="text/javascript"></script>
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
