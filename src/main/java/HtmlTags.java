@@ -38,7 +38,7 @@ public class HtmlTags {
 
     private static String htmlHeader = "   <div class=\"header\">\n" +
             "      <div class=\"topnav\" id=\"myTopnav\">\n" +
-            "         <a href=\"index.xhtml\" class=\"active\">Home</a>\n" +
+            "         <a href=\"index_old.xhtml\" class=\"active\">Home</a>\n" +
             "         <a href=\"#new\">New</a>\n" +
             "         <a href=\"overview.xhtml\">Overview</a>\n" +
             "         <a href=\"#populair\">Populair</a>\n" +

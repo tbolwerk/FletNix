@@ -1,3 +1,4 @@
+import javax.enterprise.context.SessionScoped;
 import javax.inject.Named;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -52,5 +53,15 @@ public class OverviewServlet extends HttpServlet {
 
         writer.println(contentEnd);
         req.getRequestDispatcher("footer.jsp").include(req, resp);
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        if(req.getAttribute("user") == null){
+            PrintWriter writer = resp.getWriter();
+            writer.println("error overview");
+            return;
+        }
+        doGet(req,resp);
     }
 }

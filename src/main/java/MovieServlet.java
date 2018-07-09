@@ -6,6 +6,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -56,20 +57,29 @@ public class MovieServlet extends HttpServlet {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        HttpSession session = req.getSession();
+
+        session.setAttribute("movie_id",movie.getMovie_id());
+        session.setAttribute("title",movie.getTitle());
+        session.setAttribute("description",movie.getDescription());
+        session.setAttribute("cover_image",movie.getCover_image());
+
+
 
         resp.setContentType("text/html; charset=UTF-8");
         resp.setCharacterEncoding("UTF-8");
         PrintWriter writer = resp.getWriter();
 
         req.getRequestDispatcher("header.jsp").include(req, resp);
-        String contentStart = "<div class=\"content\">";
-        String contentEnd = "</div>";
-        String poster = "<img src=\"img/posters/"+movie.getCover_image()+"\"/>";
-        writer.println(contentStart);
-        writer.println((new Date()).toString());
-        writer.println(poster);
-
-        writer.println(contentEnd);
+        req.getRequestDispatcher("movie.jsp").include(req, resp);
+//        String contentStart = "<div class=\"content\">";
+//        String contentEnd = "</div>";
+//        String poster = "<img src=\"img/posters/"+movie.getCover_image()+"\"/>";
+//        writer.println(contentStart);
+//        writer.println((new Date()).toString());
+//        writer.println(poster);
+//
+//        writer.println(contentEnd);
         req.getRequestDispatcher("footer.jsp").include(req, resp);
 
     }

@@ -142,7 +142,7 @@ body{
         opacity: 1;
         background-color: transparent;
     }
-    .content .info-box .hidden-info-box h1,p{
+    .content .info-box .hidden-info-box{
         display: none;
     }
 
