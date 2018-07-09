@@ -9,6 +9,7 @@
 body {
     overflow-x: hidden;
     overflow-y: scroll;
+
 }
 
 /* width */
@@ -17,7 +18,7 @@ body {
 }
 
 .search-scroll {
-    overflow: scroll;
+    overflow: hidden;
     height: 500px;
 }
 
@@ -42,7 +43,7 @@ body {
     top: 0px;
     right: 0px;
     position: fixed;
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 .search_overlay-form {
@@ -339,6 +340,8 @@ input[type="search"] { /* reset normalize */
 .search_overlay.open ~ .overlay_search {
     opacity: 1;
 }
+
+
 
 @media screen and (max-width: 53.125em) {
     .search_overlay-input {

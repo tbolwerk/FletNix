@@ -8,9 +8,10 @@ import java.util.ArrayList;
 @Named
 @RequestScoped
 public class Controller {
-    public static ArrayList<Movie> movies = new ArrayList<Movie>();
+    private static ArrayList<Movie> movies = new ArrayList<Movie>();
 
     public ArrayList<Movie> getMovies() throws SQLException {
+        movies.clear();
         ConnectDB connectDB = new ConnectDB();
         Statement statement = connectDB.getConnection().createStatement();
         String query = "SELECT * FROM MOVIE";

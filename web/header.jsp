@@ -23,7 +23,7 @@
     <div class="topnav" id="myTopnav">
         <a href="index.xhtml" class="active">Home</a>
         <a href="#new">New</a>
-        <a href="overview.xhtml">Overview</a>
+        <a href="overviewservlet">Overview</a>
         <a href="#populair">Populair</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
@@ -42,7 +42,7 @@
     </form>
     <div class="search_overlay-content">
         <div class="dummy-column">
-            <h2>People</h2>
+            <h2>Movies</h2>
         <div id="livesearch"></div>
         </div>
         <div class="dummy-column">
@@ -73,7 +73,7 @@
             </a>
         </div>
         <div class="dummy-column">
-            <h2>Recent</h2>
+            <h2>New</h2>
             <a class="dummy-media-object" href="http://tympanus.net/codrops/2014/10/07/tooltip-styles-inspiration/">
                 <img src="img/thumbs/TooltipStylesInspiration.png" alt="TooltipStylesInspiration"/>
                 <h3>Tooltip Styles Inspiration</h3>
